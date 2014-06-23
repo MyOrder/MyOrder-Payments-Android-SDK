@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="@dimen/layout_width_five_hundred"
+        android:layout_height="@dimen/edit_textbox_height"
+        android:layout_marginTop="20dip"
+        android:cursorVisible="true"
+        android:enabled="true"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:paddingLeft="10dip"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/pass_field"
+        android:layout_width="@dimen/layout_width_five_hundred"
+        android:layout_height="@dimen/edit_textbox_height"
+        android:layout_marginTop="10dip"
+        android:cursorVisible="true"
+        android:enabled="true"
+        android:hint="@string/my_order_password"
+        android:inputType="textPassword"
+        android:paddingLeft="10dip"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="@dimen/layout_width_five_hundred"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal"
+        android:paddingRight="10dip" >
+
+        <TextView
+            android:id="@+id/txt_remember"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="10dip"
+            android:text="@string/remember"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <CheckBox
+            android:id="@+id/store_password"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:button="@drawable/remember_pwd_state"
+            android:checked="false" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_btn_login"
+        android:layout_width="@dimen/layout_width_five_hundred"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/my_order_login"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/reset_password"
+        android:layout_width="@dimen/layout_width_five_hundred"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/reset_password"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+</LinearLayout>

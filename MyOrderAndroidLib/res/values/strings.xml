@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="phone_number">Phone number</string>
+    <string name="amount">Amount</string>
+    <string name="code">Code</string>
+    <string name="wallet">Wallet</string>
+    <string name="email">Email address</string>
+    <string name="confirmation_code">Confirmation Code</string>
+    <string name="credit_card_number">Credit Card Number</string>
+    <string name="expiration_month">MM</string>
+    <string name="expiration_year">YY</string>
+    <string name="cvc">CVC-Code</string>
+    <string name="my_order_login">Login</string>
+    <string name="order_history">Orders</string>
+    <string name="my_order_password">Password</string>
+    <string name="my_order_confirmpassword">Confirm password</string>
+    <!-- <string name="my_order_password_confirm">Confirmation</string> -->
+    <string name="charge_wallet">Charge Wallet</string>
+    <string name="scan_credit_card">Scan your creditcard</string>
+    <string name="charge_minitix">Charge MiNiTiX</string>
+    <string name="pay">Pay</string>
+    <string name="confirm">Confirm</string>
+    <string name="ok">OK</string>
+    <string name="eurosign">\u20ac</string>
+    <string name="cancel">Cancel</string>
+    <string name="loading">Loading</string>
+    <string name="register">Register</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="pay_with">Pay with</string>
+    <string name="selecte_different_payment_type">Or choose a different payment</string>
+    <string name="select_bank">Select your bank</string>
+    <string name="bankaccount_error">User does not have a bank account linked to its MiniTix wallet. Please, make an iDeal transaction first</string>
+    <string name="sms_code_info_message">A SMS has been sent to %S containing a verification code, please use this code to complete the registration</string>
+    <string name="minitix_description">Pay your order directly from your app with your MiniTix wallet from Rabobank. Safe and fast payment!</string>
+    <string name="ideal_description">With iDEAL you directly debit from your bank account. Also, iDEAL can be used to put money safely in your MiniTix wallet of Rabobank</string>
+    <string name="creadit_card_description">Pay using your Visa or Mastercard. You can also use your credit card to put money safely in your MiniTix wallet of Rabobank</string>
+    <string name="card_description">Here you can charge your MiniTix wallet. Enter the code from a MyOrder charge card below.k</string>
+    <string name="ota_description">With one time authorization you directly debit from your previously used bank account. Also, one time authorization can be used to put money safely in your MiniTix wallet of Rabobank</string>
+    <string name="paypal_description">Use your PayPal account to pay for orders. You only have to login once. Also, PayPal can be used to put money safely in your MiniTix wallet of Rabobank</string>
+    <string name="order_status">Your order is </string>
+    <string name="ideal_info_text">Please enter the amount to transfer to your MiniTix wallet.</string>
+    <string name="paypal_info_text">Enter the amount in euros below. Press the pay button and PayPal will handle the transaction.</string>
+    <string name="card_info_text">Here you can charge your MiniTix wallet. Enter the code from a MyOrder charge card below.</string>
+    <string name="remember">Remember</string>
+    <string name="reset_password">Forget password?</string>
+    <string name="order_number">Order </string>
+    <string name="order_date">Order Date:</string>
+    <string name="total_ammount">Total Amount</string>
+    <string name="total_price">Total price: </string>
+    <string name="register_info_text">Please enter your phone number, including country code. Example: +10005550101</string>
+    <string name="accept_terms_condition">I accept the terms and conditions of <a href="http://www.minitix.nl/uploadedFiles/161.pdf">MiniTix</a> and <a href="http://www.myorder.nl/voorwaarden/voorwaarden2012.pdf">MyOrder</a></string>
+    <!-- error Messages -->
+    <string name="email_validation">Please provide the valid email address</string>
+    <string name="ideal_amount_errormessage">Amount Should be at least \u20AC 10,00</string>
+    <string name="terms_codition_error">You have to accept the terms and conditions to continue.</string>
+    <string name="user_password_empty">Please provide the phone number/ Password</string>
+    <string name="required_field">Missing required field</string>
+    <string name="password_confirmpassword_matching_error">Password and confirm password should match</string>
+    <string name="failed">Failed</string>
+    <string name="in_progress">In progress</string>
+    <string name="success">Success</string>
+    <string name="payment_info">Payment information</string>
+    <string name="payment_date">Payment date</string>
+    <string name="bestelnummer">Order number</string>
+	<string name="load_your_wallet">Load your wallet</string>
+	<string name="products">Products</string>
+	<string name="manualreloadinfo">Enter the amount you want to charge from your bank account.</string>
+	<string name="bankaccountlabel">Bank Account</string>
+	<string name="bankaccountcheck">Please verify your bank account number.</string>
+	<string name="registeracceptconditionsolder18">I am older than 18 years</string>
+	<string name="charge">Charge Wallet</string>
+	<string name="creditcardamount">Amount</string>
+	<string name="lbl_agree_ota">I agree with this one-time authorization</string>
+	<string name="nothighenough">%1$s should be at least %2$s.</string>
+	<string name="notfilledin">%1$s is not filled in.</string>
+	<string name="registerolder18error">You have to be older than 18 year for direct charging.</string>
+	
+	<string name="txt_more_options">More options</string>
+    <string name="txt_automatic_charge">Automatic charge</string>
+    <string name="lbl_link_your_payment_key">Link your Payment key</string>
+    <string name="lbl_pay_your_friends">Pay your friends</string>
+    <string name="emptyDescription"></string>
+    <string name="msg_fill_confirmation_code">Please fill the confimation Code</string>
+    <string name="msg_06_number_of_myorder_id">06 number of MyOrder ID</string>
+    <string name="lbl_definition">Definition</string>
+    <string name="msg_fill_in_your_details_here">Fill in your details here</string>
+    <string name="msg_contact_access_denied">Access denied for contact</string>
+    
+    <string name="chargemaxinfo">Maximum charge amount</string>
+	<string name="automaticreload">Automatically Reload</string>
+	<string name="save">Save</string>
+	<string name="powered_by">Powered by</string>
+	<string name="used_saved_card">Or use your saved card</string>
+	<string name="pay_your_friends_title">Pay your friends with saldo from your wallet</string>
+	<string name="next">Next</string>
+	<string name="data">Data</string>
+	<string name="order_your_payment_key">Order your Payment key</string>
+	<string name="accept">Accept</string>
+
+	<string name="permonth">per month</string>
+	<string name="perweek">per week</string>
+	<string name="lbl_next">Next</string>
+	<string name="lbl_choose_max_amount_per_period">Choose max. amount per period</string>
+	<string name="lbl_enter_your_bank_account_number">Enter your bank account number</string>
+	<string name="lbl_auto_reload_title">Auto Reload</string>
+</resources>

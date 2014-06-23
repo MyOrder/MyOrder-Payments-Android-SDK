@@ -1,0 +1,14 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dip</dimen>
+    <dimen name="activity_vertical_margin">16dip</dimen>
+    <dimen name="edit_textbox_height">40dip</dimen>
+    <dimen name="wallet_divier_height">20dip</dimen>
+    <dimen name="ten_dp">10dip</dimen>
+    <dimen name="five_dp">5dip</dimen>
+    <dimen name="fifteen_dp">15dip</dimen>
+	<dimen name="twentyfive_dp">25dip</dimen>
+	<dimen name="layout_width_five_hundred">500dip</dimen>
+	<dimen name="layout_width_four_six_hundred">600dip</dimen>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#EDECEA</color>
+    <color name="actionbar_background">#FF8226</color>
+    <color name="balance_text_bg">#EAEAEA</color>
+    <color name="my_order_blue">#13A3DC</color>
+    <color name="green">#008000</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFA500</color>
+    <color name="text_color">#4F5C7B</color>
+    <color name="lightest_grey">#f4f4f4</color>
+    <color name="gray">#a8a8a8</color>
+	<color name="light_grey_color">#D2D2D2</color>
+	<color name="soft_text">#666</color>
+	<color name="black">#000000</color>
+	<color name="foreground2">#fb3</color>
+	<color name="solid_stroke">#ddd</color>
+	<color name="light_stroke">#1000</color>
+	<color name="charging_divider_color">#E4E4E4</color>
+	<color name="transparent">#00000000</color>
+	<color name="grey_da">#dadada</color>
+    <color name="grey_ee">#eeeeee</color>
+</resources>

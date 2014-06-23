@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="LibTheme" parent="AppBaseTheme">
+        <item name="android:editTextStyle">@style/MyOrderEditTextStyle</item>
+       <item name="android:buttonStyle">@style/MyOrderButtonStyle</item>
+    </style>
+
+</resources>

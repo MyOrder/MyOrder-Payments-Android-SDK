@@ -1,0 +1,88 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.    -->
+
+    <style name="MyOrderEditTextStyle" parent="@android:style/Widget.EditText">
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/round_background</item>
+    </style>
+
+    <style name="MyOrderButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:padding">@dimen/ten_dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/button_bg</item>
+    </style>
+
+    <style name="Jumio.Translucent" parent="android:Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="TextStyleRight" parent="@android:style/Widget.TextView">
+        <item name="android:layout_marginRight">@dimen/five_dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.3</item>
+    </style>
+
+    <style name="TextStyleLeft" parent="@android:style/Widget.TextView">
+        <item name="android:layout_marginLeft">@dimen/five_dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.7</item>
+    </style>
+
+    <style name="AmountEditText">
+        <item name="android:digits">0123456789.,</item>
+        <item name="android:hint">@string/creditcardamount</item>
+        <item name="android:imeOptions">flagNoExtractUi</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+    
+    <style name="SeparatorText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textColor">@color/soft_text</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    
+    <style name="SeparatorTextWithoutPadding">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/soft_text</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    
+    <style name="DefaultButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">144dp</item>
+    </style>	
+    
+    <style name="Theme.JumioNetswipeSDK" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/Theme.JumioNetswipeSDK.ActionBar</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+    
+    <style name="Theme.JumioNetswipeSDK.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">#000000</item>
+
+        <!-- just in case you want to customize the title text, we have it prepared
+        <item name="android:titleTextStyle">@style/Theme.JumioNetswipeSDK.ActionBar.TitleTextStyle</item>
+         -->
+    </style>
+    
+</resources>

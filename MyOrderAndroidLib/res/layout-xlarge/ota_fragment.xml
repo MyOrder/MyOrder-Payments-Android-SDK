@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="400dp"
+        android:layout_height="@dimen/edit_textbox_height"
+        android:layout_marginTop="20dip"
+        android:cursorVisible="true"
+        android:enabled="true"
+        android:hint="@string/amount"
+        android:inputType="phone"
+        android:textAppearance="@android:style/TextAppearance.Large" >
+    </EditText>
+
+    <Button
+        android:id="@+id/fill_wallet"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:padding="10dip"
+        android:text="@string/charge_wallet"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/mainView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/manualreloadinfo" />
+
+        <EditText
+            android:id="@+id/amountView"
+            style="@style/AmountEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            style="@style/SeparatorText"
+            android:layout_marginTop="16dp"
+            android:text="@string/bankaccountlabel" />
+
+        <TextView
+            android:id="@+id/bankAccountCheckView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bankaccountcheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:weightSum="5">
+
+            <EditText
+                android:id="@+id/iBanPrefix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/light_grey_color"
+                android:layout_weight="3"
+                android:singleLine="true"
+                android:inputType="text"
+                android:enabled="false"
+                />
+
+            <EditText
+                android:id="@+id/bankAccountView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="2"
+                android:singleLine="true"
+                android:inputType="number" />
+        </LinearLayout>
+	
+        
+        <CheckBox android:id="@+id/morethan18checkbox"
+            android:text="@string/registeracceptconditionsolder18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="16dp"/>
+        
+        <Button
+            android:id="@+id/okButton"
+            style="@style/DefaultButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="@string/charge" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/infotext"
+        android:layout_width="@dimen/layout_width_five_hundred"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/ideal_info_text"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="@dimen/layout_width_five_hundred"
+        android:layout_height="@dimen/edit_textbox_height"
+        android:cursorVisible="true"
+        android:enabled="true"
+        android:hint="@string/amount"
+        android:inputType="phone"
+        android:textAppearance="@android:style/TextAppearance.Medium" >
+    </EditText>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="@dimen/layout_width_five_hundred"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_background"
+        android:prompt="@string/select_bank" />
+
+    <Button
+        android:id="@+id/fill_wallet"
+        android:layout_width="@dimen/layout_width_five_hundred"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="@string/charge_wallet"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+</LinearLayout>

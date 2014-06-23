@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MyOrder</string>
+    <string name="my_order_loggout">Logout</string>
+    <string name="show_wallet">Show wallet</string>
+    <string name="place_order">Place Order</string>
+    <string name="purchase_history_lbl">Purchase History</string>
+
+</resources>

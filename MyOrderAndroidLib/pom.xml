@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>nl.myorder</groupId>
+	<artifactId>myorderlib</artifactId>
+	<name>MyOrderAndroidLib</name>
+	<packaging>apklib</packaging>
+	<version>2.0.0</version>
+	<properties>
+		<java.version>1.6</java.version>
+		<android.version>4.1.1.4</android.version>
+		<android.platform>17</android.platform>
+		<android-support.version>r7</android-support.version>
+		<android-maven.version>3.1.1</android-maven.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<scope>provided</scope>
+			<version>${android.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>support-v4</artifactId>
+			<version>${android-support.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.myorder</groupId>
+			<artifactId>myorder</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+
+		<!-- <dependency> -->
+		<!-- <groupId>myOrderSDK</groupId> -->
+		<!-- <artifactId>myOrderSDK</artifactId> -->
+		<!-- <version>1</version> -->
+		<!-- <scope>system</scope> -->
+		<!-- <systemPath>${basedir}/libs/myorder-1.0.0.jar</systemPath> -->
+		<!-- </dependency> -->
+		<dependency>
+			<groupId>jumio_netswipe_sdk</groupId>
+			<artifactId>jumio_netswipe_sdk</artifactId>
+			<version>1.6.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/libs/jumio_netswipe_sdk_1.6.0.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>PayPal_MPL</groupId>
+			<artifactId>PayPal_MPL</artifactId>
+			<version>1.0.0</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/libs/PayPal_MPL.jar</systemPath>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+		<testSourceDirectory>test</testSourceDirectory>
+
+		<plugins>
+			<plugin>
+				<groupId>com.jayway.maven.plugins.android.generation2</groupId>
+				<artifactId>android-maven-plugin</artifactId>
+				<extensions>true</extensions>
+
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>jar-with-dependencies</descriptorRef>
+					</descriptorRefs>
+					<sdk>
+						<platform>16</platform>
+					</sdk>
+					<undeployBeforeDeploy>true</undeployBeforeDeploy>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>com.google.code.maven-replacer-plugin</groupId>
+				<artifactId>maven-replacer-plugin</artifactId>
+				<version>1.4.0</version>
+				<executions>
+					<execution>
+						<phase>process-sources</phase>
+						<goals>
+							<goal>replace</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<ignoreMissingFile>false</ignoreMissingFile>
+					<file>target/generated-sources/r/nl/myorder/lib/R.java</file>
+					<outputFile>target/generated-sources/r/nl/myorder/lib/R.java</outputFile>
+					<regex>false</regex>
+					<token>static final int</token>
+					<value>static int</value>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>build-helper-maven-plugin</artifactId>
+				<version>1.7</version>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>attach-artifact</goal>
+						</goals>
+						<configuration>
+							<artifacts>
+								<artifact>
+									<type>jar</type>
+									<file>${project.build.directory}/${project.build.finalName}.jar</file>
+								</artifact>
+							</artifacts>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+
+		<pluginManagement>
+			<plugins>
+				<!--This plugin's configuration is used to store Eclipse m2e settings 
+					only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>com.google.code.maven-replacer-plugin</groupId>
+										<artifactId>maven-replacer-plugin</artifactId>
+										<versionRange>[1.4.0,)</versionRange>
+										<goals>
+											<goal>replace</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	<distributionManagement>
+		<repository>
+			<id>xaton</id>
+			<name>Xaton</name>
+			<url>http://nexus.xaton.com:16082/nexus/content/repositories/xaton</url>
+		</repository>
+		<snapshotRepository>
+			<id>xaton-snapshot</id>
+			<name>Xaton Snapshots</name>
+			<url>http://nexus.xaton.com:16082/nexus/content/repositories/xaton-snapshot</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>

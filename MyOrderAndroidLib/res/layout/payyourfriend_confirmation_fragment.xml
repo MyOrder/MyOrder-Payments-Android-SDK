@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/confirmation_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_textbox_height"
+        android:cursorVisible="true"
+        android:enabled="true"
+        android:hint="@string/confirmation_code"
+        android:inputType="text">
+    </EditText>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/confirm"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm" />
+
+</LinearLayout>

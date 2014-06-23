@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="50dip" >
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sms_code_info_message"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+    <EditText
+        android:id="@+id/confirmation_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_textbox_height"
+        android:layout_marginTop="20dip"
+        android:cursorVisible="true"
+        android:enabled="true"
+        android:hint="@string/confirmation_code"
+        android:inputType="numberSigned"
+        android:textAppearance="@android:style/TextAppearance.Medium" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_textbox_height"
+        android:layout_marginTop="20dip"
+        android:cursorVisible="true"
+        android:enabled="true"
+        android:hint="@string/my_order_password"
+        android:inputType="textPassword"
+        android:textAppearance="@android:style/TextAppearance.Medium" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/confirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_textbox_height"
+        android:layout_marginTop="20dip"
+        android:cursorVisible="true"
+        android:enabled="true"
+        android:hint="@string/my_order_confirmpassword"
+        android:inputType="textPassword"
+        android:textAppearance="@android:style/TextAppearance.Medium" >
+    </EditText>
+
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:padding="10dip"
+        android:text="@string/confirm"
+        android:textAppearance="@android:style/TextAppearance.Medium" />
+
+</LinearLayout>
