@@ -104,4 +104,5 @@
 	<string name="lbl_choose_max_amount_per_period">Choose max. amount per period</string>
 	<string name="lbl_enter_your_bank_account_number">Enter your bank account number</string>
 	<string name="lbl_auto_reload_title">Auto Reload</string>
+	<string name="lbl_chargecard">Chargecard</string>
 </resources>

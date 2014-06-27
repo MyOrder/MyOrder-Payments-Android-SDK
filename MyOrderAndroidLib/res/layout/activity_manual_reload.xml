@@ -65,9 +65,11 @@
         
         <CheckBox android:id="@+id/morethan18checkbox"
             android:text="@string/registeracceptconditionsolder18"
+           	android:button="@null"
+            android:drawableRight="@drawable/remember_pwd_state"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="left"
+            android:layout_gravity="start"
             android:layout_marginTop="16dp"/>
         
         <Button

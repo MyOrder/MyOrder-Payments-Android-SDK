@@ -28,7 +28,6 @@
         android:id="@+id/rabo_bank_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_payment_logo_rabobank"
         android:visibility="gone" />
 
 </LinearLayout>

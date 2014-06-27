@@ -13,23 +13,22 @@
 
         <ImageView
             android:id="@+id/product_img"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
             android:adjustViewBounds="true"
             android:contentDescription="@string/emptyDescription"
-            android:scaleType="centerInside"
             android:src="@drawable/ic_transactie_detail_placeholder" />
 
         <TextView
             android:id="@+id/quatity"
-            android:layout_width="@dimen/twentyfive_dp"
-            android:layout_height="@dimen/twentyfive_dp"
+            android:layout_width="@dimen/image_dp"
+            android:layout_height="@dimen/image_dp"
             android:layout_alignBottom="@+id/product_img"
             android:layout_alignRight="@+id/product_img"
             android:layout_margin="2dp"
             android:background="@drawable/circle"
             android:gravity="center"
-            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textAppearance="@android:style/TextAppearance.Small"
             android:textColor="@android:color/white"
             android:textStyle="bold"
             android:visibility="invisible" />
