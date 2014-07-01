@@ -44,14 +44,16 @@ Additionally, you can customize other MyOrder properties depending on your proje
 * Available payment providers can be changed by using the `configureWithPaymentProviders` method. Example:
 ```
 		Set<PaymentProvider> set = new HashSet<PaymentProvider>();
-		set.add(new PaymentProvider(true, true, "MiniTix", 1, false, getResources().getString(nl.myorder.lib.R.string.minitix_description), "MiniTix"));
-		set.add(new PaymentProvider(true, true, "iDeal", 2, false, getResources().getString(nl.myorder.lib.R.string.ideal_description), "iDEAL"));
-		set.add(new PaymentProvider(true, true, "CreditCard", 4, false, getResources().getString(nl.myorder.lib.R.string.creadit_card_description),
-				"CreditCard"));
-		set.add(new PaymentProvider(false, false, "PayPal", 3, false, getResources().getString(nl.myorder.lib.R.string.paypal_description), "PayPal"));
-		set.add(new PaymentProvider(true, false, "Card", 5, false, getResources().getString(nl.myorder.lib.R.string.card_description), "Card"));
-		set.add(new PaymentProvider(true, false, "OTA", 6, false, getResources().getString(nl.myorder.lib.R.string.ota_description), getString(R.string.ota_payment)));
-		set.add(new PaymentProvider(false, false, "AUTO", 6, false, getResources().getString(nl.myorder.lib.R.string.lbl_auto_reload_title), getString(R.string.lbl_auto_reload_title)));
+		set.add(new PaymentProvider(true, true, MOConstant.PAYMENT_PROVIDER_MINITIX, 1, false, getResources().getString(nl.myorder.lib.R.string.minitix_description), MOConstant.PAYMENT_PROVIDER_MINITIX));
+		set.add(new PaymentProvider(true, true, MOConstant.PAYMENT_PROVIDER_IDEAL, 2, false, getResources().getString(nl.myorder.lib.R.string.ideal_description), "iDEAL"));
+		set.add(new PaymentProvider(true, true, MOConstant.PAYMENT_PROVIDER_CREDITCARD, 4, false, getResources().getString(nl.myorder.lib.R.string.creadit_card_description),
+				MOConstant.PAYMENT_PROVIDER_CREDITCARD));
+		set.add(new PaymentProvider(false, false, MOConstant.PAYMENT_PROVIDER_PAYPAL, 3, false, getResources().getString(nl.myorder.lib.R.string.paypal_description), MOConstant.PAYMENT_PROVIDER_PAYPAL));
+		set.add(new PaymentProvider(true, false, MOConstant.PAYMENT_PROVIDER_CARD, 5, false, getResources().getString(nl.myorder.lib.R.string.card_description), MOConstant.PAYMENT_PROVIDER_CARD));
+		set.add(new PaymentProvider(true, false, MOConstant.PAYMENT_PROVIDER_OTA, 6, false, getResources().getString(nl.myorder.lib.R.string.ota_description),
+				getString(R.string.ota_payment)));
+		set.add(new PaymentProvider(false, false, MOConstant.PAYMENT_PROVIDER_AUTO, 6, false, getResources().getString(nl.myorder.lib.R.string.lbl_auto_reload_title),
+				getString(R.string.lbl_auto_reload_title)));
 		order.setConfiguredPaymentProviders(set);
 ```
 
