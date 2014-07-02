@@ -1,7 +1,7 @@
 MyOrder-Payments-Android-SDK
 ============================
 
-Public Android framework for the [MyOrder payments SDK](http://myorder.nl/sdk).. Check the online [API documentation here](http://htmlpreview.github.io/?https://github.com/MyOrder/MyOrder-Payments-Android-SDK/blob/master/docs/html/index.html) 
+Public Android framework for the [MyOrder payments SDK](http://myorder.nl/sdk).. Check the online [API documentation here](http://htmlpreview.github.io/?https://github.com/MyOrder/MyOrder-Payments-Android-SDK/blob/develop/docs/html/index.html) 
 
 ## Installation guide
 
@@ -116,5 +116,4 @@ Note that if you use the library this way you need to be sure the user is logged
 ## Final notes
 
 This guide presents some of the most useful and common integration methods. However, the SDK comes with many other options that allow third party developers to make advanced integrations where the UI can be fully customized, new payment methods can be added, etc.
-Please, check the [API documentation](http://htmlpreview.github.io/?https://github.com/MyOrder/MyOrder-Payments-Android-SDK/blob/master/docs/html/index.html) to get more details of all options available
-
+Please, check the [API documentation](http://htmlpreview.github.io/?https://github.com/MyOrder/MyOrder-Payments-Android-SDK/blob/develop/docs/html/index.html) to get more details of all options available
