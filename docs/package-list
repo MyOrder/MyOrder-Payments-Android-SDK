@@ -1,0 +1,17 @@
+myorder
+myorder.exception
+myorder.http.utils
+myorder.listeners
+myorder.model
+myorder.order
+myorder.order.utils
+myorder.paymentprovider
+myorder.paymentprovider.auto
+myorder.paymentprovider.card
+myorder.paymentprovider.creditcard
+myorder.paymentprovider.ideal
+myorder.paymentprovider.minitix
+myorder.paymentprovider.ota
+myorder.paymentprovider.paypal
+test.myorder
+test.myorder.transactions

@@ -1,7 +1,7 @@
 MyOrder-Payments-Android-SDK
 ============================
 
-Public Android framework for the [MyOrder payments SDK](http://myorder.nl/sdk).. Online API documentation here 
+Public Android framework for the [MyOrder payments SDK](http://myorder.nl/sdk).. Check the online [API documentation here](http://htmlpreview.github.io/?https://github.com/MyOrder/MyOrder-Payments-Android-SDK/blob/master/docs/html/index.html) 
 
 ## Installation guide
 
@@ -70,7 +70,6 @@ Payments can be easily performed by using the `WalletFragment`. Note that you ne
 		MOOrder order = new MOOrder();
 		order.setPrice(shoppingCartOrder.getTotal().getAmount());
 		order.setExternalOrderId(String.valueOf(shoppingCartOrder.getId()));
-		order.setOrderId(String.valueOf(shoppingCartOrder.getId()));
 		List<OrderItem> item = new ArrayList<OrderItem>()
 		order.setOrderItems(item);
 		Bundle bundle = new Bundle();
@@ -80,4 +79,42 @@ Payments can be easily performed by using the `WalletFragment`. Note that you ne
 
 Similarly to the wallet method, making a payment does not necessarily require login. However, If the user is not logged in, some payment methods will not be presented. If login is required, then this method could potentially return a controller for login in, already set up for continuing with the payment when successfully logged in.
 
+### Make a payment with a specific payment method
+
+If you know which payment method to use (for example if you customize the UI for selecting payments in your app), then you can open an specific payment method screen by using:
+
+```
+			Bundle arg = new Bundle();
+			arg.putString(PaymentProvider.class.getSimpleName(), providerName);
+			arg.putString(MOFragmentStateHandler.FRAGMENT_CLASS_ARGS, MyOrder.getInstance().newTransactionForProvider(providerName).getClass().getSimpleName()
+					+ "Fragment");
+			if (order != null) {
+				arg.putSerializable(MOOrder.class.getSimpleName(), order);
+			}
+			MyOrderFragment fragment = (MyOrderFragment) Class.forName("nl.myorder.lib.ui.providers." + MyOrder.getInstance().newTransactionForProvider(providerName).getClass().getSimpleName()
+					+ "Fragment").newInstance();
+			fragment.setArguments(arg);
+			fm.beginTransaction().replace(resourceId, fragment).commit();
+			
+```
+
+Additionally, this way gives you some extra blocks to perform custom actions when the transaction has an error, is completed or started. Example:
+
+
+```
+	Actity can implement VerifyPaymentOrderListener then SDK will call 
+		VerifyPaymentOrderListener.verifyOrder(StartPaymentTransactionListener arg0) 
+        //Custom logic to control whether the transaction is ready. Return YES to allow start
+        call arg0.startTransaction("123456");
+    };
+	
+```
+Activity can implement MONotificationHandler listener to get notified in case of error, warring and notification.
+
+Note that if you use the library this way you need to be sure the user is logged in properly for those methods that require a login. You can do that by using the login methods in 'MyOrder` class or by creating a `MyOrderLoginFragment` controller. And example is provided in the Example project.
+
+## Final notes
+
+This guide presents some of the most useful and common integration methods. However, the SDK comes with many other options that allow third party developers to make advanced integrations where the UI can be fully customized, new payment methods can be added, etc.
+Please, check the [API documentation](http://htmlpreview.github.io/?https://github.com/MyOrder/MyOrder-Payments-Android-SDK/blob/master/docs/html/index.html) to get more details of all options available
 
