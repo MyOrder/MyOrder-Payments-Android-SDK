@@ -122,10 +122,9 @@ public class HomeFragment extends Fragment implements OnClickListener {
 			MOOrder order = new MOOrder();
 			order.setPrice(1.0);
 			order.setExternalOrderId("123456");
-			order.setOrderId("123456");
-			//OrderItem item = new OrderItem(0.5, 2, "Test orderitems");
+			OrderItem item = new OrderItem(0.5, 2, "Test orderitems");
 			List<OrderItem> items = new ArrayList<OrderItem>();
-			//items.add(item);
+			items.add(item);
 			order.setOrderItems(items);
 			MyOrder.getInstance().setPhoneNumber(phoneNumber.getText().toString());
 			Bundle arg = new Bundle();
