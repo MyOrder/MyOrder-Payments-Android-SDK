@@ -27,8 +27,8 @@ Before using the MyOrderSDK, you need to set up the credentials. You can do it b
 			MyOrder order = MyOrder.getInstance();
 			order.setEnvironment(MyOrderEnvironment.MyOrderEnvironmentLive);
 			order.setCredentialStorage(new MyOrderStorage(getApplicationContext()));
-			order.setApiKey("d712d563-d5ed-4826-8920-1b2c2b743ba9");
-			order.setApiSecret("hH3#1PxxS");
+			order.setApiKey("36bd8913-bf56-4aa0-9492-49a3240597ea");
+			order.setApiSecret("12H@c9kT$At);
 			order.setIdealReturnUrl("myapp-scheme://ideal_return_url");
 
 ```
