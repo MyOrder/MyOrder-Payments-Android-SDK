@@ -4,6 +4,6 @@
     <string name="server_url">http://playground-java.myorder.nl/api/v1/</string>
     <string name="test_key">36bd8913-bf56-4aa0-9492-49a3240597ea</string>
     <string name="test_sec">12H@c9kT$At</string>
-    <string name="ideal_url">myorder-sample://ideal_return_url</string>
+    <string name="url_scheme">myorder-sample</string>
 
 </resources>

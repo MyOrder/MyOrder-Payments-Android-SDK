@@ -4,6 +4,7 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    style="@style/FragmentStyle"
     android:padding="30dp" >
 
     <TextView

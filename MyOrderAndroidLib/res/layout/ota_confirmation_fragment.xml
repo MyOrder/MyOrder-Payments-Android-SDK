@@ -4,8 +4,15 @@
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
+    style="@style/FragmentStyle"
     android:padding="10dp" >
 
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lbl_fill_your_confirmation_code"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"/>
+    
     <EditText
         android:id="@+id/confirmation_code"
         android:layout_width="match_parent"

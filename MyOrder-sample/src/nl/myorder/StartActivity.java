@@ -39,7 +39,7 @@ public class StartActivity extends MyOrderActivity implements VerifyPaymentOrder
 		order.setCredentialStorage(new MyOrderStorage(getApplicationContext()));
 		order.setApiKey(getString(R.string.test_key));
 		order.setApiSecret(getString(R.string.test_sec));
-		order.setIdealReturnUrl(getResources().getString(R.string.ideal_url));
+		order.setUrlScheme(getResources().getString(R.string.url_scheme));
 		Set<PaymentProvider> set = new HashSet<PaymentProvider>();
 
 		set.add(new PaymentProvider(true, true, MOConstant.PAYMENT_PROVIDER_MINITIX, 1, false, getResources().getString(

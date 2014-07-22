@@ -22,5 +22,6 @@
     <color name="transparent">#00000000</color>
     <color name="grey_da">#dadada</color>
     <color name="grey_ee">#eeeeee</color>
+    <color name="menu_text">#4c5e7a</color>
 
 </resources>

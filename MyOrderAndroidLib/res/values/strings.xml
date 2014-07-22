@@ -104,5 +104,15 @@
     <string name="lbl_chargecard">Chargecard</string>
     <string name="ota_payment">Direct debit</string>
     <string name="lbl_mycashless">MyCashless</string>
+    <string name="lbl_amount_for_withdraw">Enter the amount you want to transfer to your bank account.</string>
+    <string name="lbl_withdraw">Withdraw</string>
+    <string name="coupons">Coupons</string>
+    <string name="transactions">Transactions</string>
+    <string name="loyalty_credits">Loyalty/Credits</string>
+    <string name="lbl_fill_your_confirmation_code">Fill your verification code received in your phone</string>
+    <string name="lbl_withdraw_wallet">Withdraw from wallet</string>
+
+    <!-- transaction completion message -->
+    <string name="lbl_payfriend_confirmation">Pay your friends completed</string>
 
 </resources>

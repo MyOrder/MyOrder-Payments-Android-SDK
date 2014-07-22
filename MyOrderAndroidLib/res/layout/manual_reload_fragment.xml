@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    style="@style/FragmentStyle"
     android:layout_height="match_parent" >
 
     <LinearLayout
@@ -75,6 +76,7 @@
         <Button
             android:id="@+id/okButton"
             style="@style/DefaultButton"
+            android:layout_width="match_parent"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="16dp"
             android:text="@string/charge" />

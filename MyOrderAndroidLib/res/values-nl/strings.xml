@@ -105,5 +105,14 @@
     <string name="lbl_auto_reload_title">Automatisch opwaarderen</string>
     <string name="lbl_chargecard">Opwaardeerkaart</string>
     <string name="ota_payment">Eenmalige machtiging</string>
-
+	<string name="lbl_amount_for_withdraw">Vul het bedrag in dat je wilt terugstorten naar je rekening.</string>
+	<string name="lbl_withdraw">Terugstoren</string>
+    <string name="coupons">Coupons</string>
+    <string name="transactions">Transacties</string>
+    <string name="loyalty_credits">Loyalty/Credits</string>
+	<string name="lbl_fill_your_confirmation_code">Vul de ontvangen bevestigingscode in.</string>
+	<string name="lbl_withdraw_wallet">Terugtrekken uit de portefeuille</string>
+	
+	<!-- transaction completion message -->
+    <string name="lbl_payfriend_confirmation">Het bedrag is overgemaakt</string>
 </resources>
