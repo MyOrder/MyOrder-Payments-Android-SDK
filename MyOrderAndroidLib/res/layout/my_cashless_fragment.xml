@@ -1,54 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:myorder="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
     style="@style/FragmentStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:orientation="vertical" >
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dip"
         android:layout_marginTop="45dp"
-        android:background="@color/light_grey_color" />
-
-    <LinearLayout
-        android:id="@+id/linkPaymentKey"
-        android:layout_width="match_parent"
-        android:layout_height="45dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:paddingLeft="10dip"
-        android:paddingRight="10dip" >
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/emptyDescription"
-            android:scaleType="center"
-            android:src="@drawable/ic_betaalsleutelkoppelen" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:text="@string/lbl_link_your_payment_key"
-            android:textColor="@color/menu_text"
-            android:textSize="20sp"
-            android:visibility="visible" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dip"
-            android:contentDescription="@string/emptyDescription"
-            android:src="@drawable/ic_option_arrow_grey" />
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dip"
         android:background="@color/light_grey_color" />
 
     <LinearLayout
@@ -91,7 +52,7 @@
         android:background="@color/light_grey_color" />
 
     <LinearLayout
-        android:id="@+id/coupons"
+        android:id="@+id/linkPaymentKey"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:gravity="center_vertical"
@@ -104,14 +65,14 @@
             android:layout_height="wrap_content"
             android:contentDescription="@string/emptyDescription"
             android:scaleType="center"
-            android:src="@drawable/ic_coupons_cashless" />
+            android:src="@drawable/ic_betaalsleutelkoppelen" />
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="@string/coupons"
+            android:text="@string/lbl_link_your_payment_key"
             android:textColor="@color/menu_text"
             android:textSize="20sp"
             android:visibility="visible" />
@@ -151,6 +112,45 @@
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:text="@string/transactions"
+            android:textColor="@color/menu_text"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:contentDescription="@string/emptyDescription"
+            android:src="@drawable/ic_option_arrow_grey" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/light_grey_color" />
+
+    <LinearLayout
+        android:id="@+id/coupons"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/emptyDescription"
+            android:scaleType="center"
+            android:src="@drawable/ic_coupons_cashless" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="@string/coupons"
             android:textColor="@color/menu_text"
             android:textSize="20sp"
             android:visibility="visible" />

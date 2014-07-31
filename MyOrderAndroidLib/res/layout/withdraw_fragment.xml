@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FragmentStyle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    style="@style/FragmentStyle"
     android:padding="10dip" >
 
     <TextView
@@ -11,20 +11,35 @@
         android:layout_height="wrap_content"
         android:text="@string/lbl_amount_for_withdraw" />
 
-    <EditText
-        android:id="@+id/amountView"
-        style="@style/AmountEditText"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:singleLine="true" />
-    
-    <Button
-            android:id="@+id/okButton"
-            style="@style/DefaultButton"
+    <RelativeLayout
+        android:id="@+id/amountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/amountView"
+            style="@style/AmountEditText"
             android:layout_width="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="16dp"
-            android:text="@string/lbl_withdraw" />
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dip"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/eurosign"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/okButton"
+        style="@style/DefaultButton"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="@string/lbl_withdraw" />
 
 </LinearLayout>

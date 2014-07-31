@@ -3,7 +3,7 @@
     android:id="@+id/payment_provider_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="10dp"
+    android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
     android:background="@drawable/wallet_card_background"
     android:gravity="center_vertical"
@@ -11,16 +11,17 @@
 
     <ImageView
         android:id="@+id/provider_image"
-        android:scaleType="center"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp" />
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:scaleType="center" />
 
     <TextView
         android:id="@+id/name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
         android:layout_weight="1"
-        android:gravity="center"
+        android:gravity="center_vertical"
         android:textSize="18sp"
         android:textStyle="bold" />
 

@@ -92,7 +92,7 @@
         android:id="@+id/store_card_layout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/edit_textbox_height"
-        android:layout_marginLeft="10dp"
+        android:paddingLeft="10dp"
         android:layout_marginTop="10dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"

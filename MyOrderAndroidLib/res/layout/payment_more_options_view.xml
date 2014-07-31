@@ -5,21 +5,26 @@
     android:layout_height="wrap_content"
     android:animateLayoutChanges="true"
     android:orientation="vertical"
-    android:padding="16dp" >
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp" >
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="5dp"
         android:text="@string/txt_more_options"
         android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@color/charging_divider_color" />
 
     <RelativeLayout
         android:id="@+id/automaticChargeProvider"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:background="@drawable/state_preference_activated"
-        android:paddingBottom="10dip"
-        android:paddingLeft="10dip"
         android:paddingTop="10dip" >
 
         <TextView
@@ -27,6 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
+            android:paddingLeft="10dip"
             android:text="@string/txt_automatic_charge"
             android:textSize="16sp" />
 
@@ -38,21 +44,21 @@
             android:layout_marginRight="10dip"
             android:background="@drawable/ic_forward"
             android:contentDescription="@string/emptyDescription" />
-    </RelativeLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dip"
-        android:background="@color/charging_divider_color" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/charging_divider_color" />
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/myCashless"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:background="@drawable/state_preference_activated"
         android:clickable="true"
-        android:paddingBottom="10dip"
-        android:paddingLeft="10dip"
         android:paddingTop="10dip" >
 
         <TextView
@@ -60,6 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
+            android:paddingLeft="10dip"
             android:text="@string/lbl_mycashless"
             android:textSize="16sp" />
 
@@ -71,21 +78,21 @@
             android:layout_marginRight="10dip"
             android:background="@drawable/ic_forward"
             android:contentDescription="@string/emptyDescription" />
-    </RelativeLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dip"
-        android:background="@color/charging_divider_color" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/charging_divider_color" />
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/payYourFriendLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:background="@drawable/state_preference_activated"
         android:clickable="true"
-        android:paddingBottom="10dip"
-        android:paddingLeft="10dip"
         android:paddingTop="10dip" >
 
         <TextView
@@ -93,6 +100,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
+            android:paddingLeft="10dip"
             android:text="@string/lbl_pay_your_friends"
             android:textSize="16sp" />
 
@@ -104,21 +112,21 @@
             android:layout_marginRight="10dip"
             android:background="@drawable/ic_forward"
             android:contentDescription="@string/emptyDescription" />
-    </RelativeLayout>
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dip"
-        android:background="@color/charging_divider_color" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/charging_divider_color" />
+    </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/withdrawLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:background="@drawable/state_preference_activated"
         android:clickable="true"
-        android:paddingBottom="10dip"
-        android:paddingLeft="10dip"
         android:paddingTop="10dip" >
 
         <TextView
@@ -126,6 +134,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
+            android:paddingLeft="10dip"
             android:text="@string/lbl_withdraw_wallet"
             android:textSize="16sp" />
 
@@ -137,6 +146,12 @@
             android:layout_marginRight="10dip"
             android:background="@drawable/ic_forward"
             android:contentDescription="@string/emptyDescription" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/charging_divider_color" />
     </RelativeLayout>
 
 </LinearLayout>

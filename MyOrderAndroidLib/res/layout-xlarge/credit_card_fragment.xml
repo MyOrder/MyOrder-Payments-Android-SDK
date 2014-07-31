@@ -98,7 +98,6 @@
         android:id="@+id/store_card_layout"
         android:layout_width="@dimen/layout_width_five_hundred"
         android:layout_height="@dimen/edit_textbox_height"
-        android:layout_marginLeft="10dp"
         android:layout_marginTop="20dip"
         android:gravity="center_vertical"
         android:orientation="horizontal"

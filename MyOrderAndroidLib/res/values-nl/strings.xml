@@ -54,6 +54,7 @@
     <string name="payment_info">Betaling informatie</string>
     <string name="bestelnummer">Bestelnummer</string>
     <string name="products">Producten</string>
+    <string name="last_transactions">Laatste transacties</string>
 
     <!-- error Messages -->
     <string name="email_validation">Geef geldig e-mailadres</string>
@@ -105,14 +106,17 @@
     <string name="lbl_auto_reload_title">Automatisch opwaarderen</string>
     <string name="lbl_chargecard">Opwaardeerkaart</string>
     <string name="ota_payment">Eenmalige machtiging</string>
-	<string name="lbl_amount_for_withdraw">Vul het bedrag in dat je wilt terugstorten naar je rekening.</string>
-	<string name="lbl_withdraw">Terugstoren</string>
+    <string name="lbl_amount_for_withdraw">Vul het bedrag in dat je wilt terugstorten naar je rekening.</string>
+    <string name="lbl_withdraw">Terugstorten</string>
     <string name="coupons">Coupons</string>
     <string name="transactions">Transacties</string>
     <string name="loyalty_credits">Loyalty/Credits</string>
-	<string name="lbl_fill_your_confirmation_code">Vul de ontvangen bevestigingscode in.</string>
-	<string name="lbl_withdraw_wallet">Terugtrekken uit de portefeuille</string>
-	
-	<!-- transaction completion message -->
+    <string name="lbl_fill_your_confirmation_code">Vul de ontvangen bevestigingscode in.</string>
+    <string name="lbl_withdraw_wallet">Terugtrekken uit de portefeuille</string>
+
+    <!-- transaction completion message -->
     <string name="lbl_payfriend_confirmation">Het bedrag is overgemaakt</string>
+    <string name="lbl_user_already_exits">De gebruiker bestaat al. Wilt u het wachtwoord veranderen?</string>
+	<string name="lbl_yes">Ja</string>
+	<string name="lbl_cancel">Annuleren</string>
 </resources>

@@ -111,8 +111,11 @@
     <string name="loyalty_credits">Loyalty/Credits</string>
     <string name="lbl_fill_your_confirmation_code">Fill your verification code received in your phone</string>
     <string name="lbl_withdraw_wallet">Withdraw from wallet</string>
+    <string name="last_transactions">Last transactions</string>
 
     <!-- transaction completion message -->
     <string name="lbl_payfriend_confirmation">Pay your friends completed</string>
-
+    <string name="lbl_user_already_exits">User already exists. Do you want to change the password?</string>
+	<string name="lbl_yes">Yes</string>
+	<string name="lbl_cancel">Cancel</string>
 </resources>
