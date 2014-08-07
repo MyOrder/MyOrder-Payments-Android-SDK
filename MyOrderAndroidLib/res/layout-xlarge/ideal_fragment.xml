@@ -1,48 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FragmentStyle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey_ee"
     android:gravity="center_horizontal"
-    android:orientation="vertical"
-    style="@style/FragmentStyle"
-    android:padding="10dp" >
+    android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/infotext"
-        android:layout_width="@dimen/layout_width_four_six_hundred"
+    <LinearLayout
+        android:id="@+id/linearH"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/ideal_info_text"
-        android:textAppearance="@android:style/TextAppearance.Large"
-        android:padding="10dip"
-        android:layout_marginBottom="20dip" />
+        android:layout_marginTop="@dimen/top_padding"
+        android:background="@color/white"
+        android:orientation="horizontal" >
 
-    <EditText
-        android:id="@+id/amount"
-        android:layout_width="@dimen/layout_width_four_six_hundred"
-        android:layout_height="@dimen/edit_textbox_height"
-        android:cursorVisible="true"
-        android:enabled="true"
-        android:hint="@string/amount"
-        android:textAppearance="@android:style/TextAppearance.Large"
-        android:inputType="phone" >
-    </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/text_padding"
+            android:text="@string/eurosign"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cursorVisible="true"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:hint="@string/amount"
+            android:inputType="phone"
+            android:textAppearance="@android:style/TextAppearance.Large" >
+        </EditText>
+    </LinearLayout>
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="@dimen/layout_width_four_six_hundred"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dip"
-        android:background="@drawable/round_background"
-        android:prompt="@string/select_bank" />
+        android:layout_marginTop="@dimen/top_padding"
+        android:prompt="@string/selectbank" />
 
     <Button
         android:id="@+id/fill_wallet"
-        android:padding="10dp"
-        android:layout_width="@dimen/layout_width_four_six_hundred"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textAppearance="@android:style/TextAppearance.Large"
-        android:text="@string/charge_wallet" />
+        android:layout_margin="@dimen/btn_padding"
+        android:padding="@dimen/wallet_divier_height"
+        android:text="@string/chargewallet" />
 
 </LinearLayout>

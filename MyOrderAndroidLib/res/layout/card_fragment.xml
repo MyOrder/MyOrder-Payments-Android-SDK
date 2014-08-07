@@ -13,7 +13,7 @@
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
         android:id="@+id/infotext"
-        android:text="@string/card_info_text" />
+        android:text="@string/chargecarddescription" />
 
     <EditText
         android:id="@+id/code"
@@ -31,6 +31,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/charge_wallet" />
+        android:text="@string/chargewallet" />
 
 </LinearLayout>

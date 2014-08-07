@@ -10,7 +10,7 @@
         android:background="@color/text_background"
         android:gravity="left|center_vertical"
         android:padding="3dp"
-        android:text="@string/last_transactions"
+        android:text="@string/lasttransactions"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/white" />
 
@@ -18,7 +18,8 @@
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="@dimen/fifteen_dp" >
+        android:paddingLeft="@dimen/five_dp"
+        android:paddingRight="@dimen/five_dp" >
     </ListView>
 
 </LinearLayout>

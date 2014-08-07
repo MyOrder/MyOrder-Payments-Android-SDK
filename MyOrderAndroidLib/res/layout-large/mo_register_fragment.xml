@@ -17,7 +17,7 @@
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="@string/register_info_text"
+        android:text="@string/registerinfotext"
         android:textAppearance="@android:style/TextAppearance.Medium" />
 
     <EditText
@@ -27,7 +27,7 @@
         android:layout_marginTop="20dp"
         android:cursorVisible="true"
         android:enabled="true"
-        android:hint="@string/phone_number"
+        android:hint="@string/mobilenumber"
         android:inputType="phone"
         android:textAppearance="@android:style/TextAppearance.Medium" >
     </EditText>

@@ -13,7 +13,7 @@
         android:layout_marginTop="40dip"
         android:cursorVisible="true"
         android:enabled="true"
-        android:hint="@string/phone_number"
+        android:hint="@string/mobilenumber"
         android:inputType="phone"
         android:paddingLeft="10dip"
         android:paddingTop="10dip"
@@ -27,7 +27,7 @@
         android:layout_marginTop="20dip"
         android:cursorVisible="true"
         android:enabled="true"
-        android:hint="@string/my_order_password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:paddingLeft="10dip"
         android:paddingTop="10dip"
@@ -68,7 +68,7 @@
         android:layout_margin="10dip"
         android:gravity="center"
         android:padding="10dp"
-        android:text="@string/my_order_login"
+        android:text="@string/login"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold" />
 
@@ -79,7 +79,7 @@
         android:layout_margin="10dip"
         android:gravity="center"
         android:padding="10dp"
-        android:text="@string/reset_password"
+        android:text="@string/passwordforgotten"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textStyle="bold" />
 

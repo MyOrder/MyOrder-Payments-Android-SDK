@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="5dp"
-        android:text="@string/txt_more_options"
+        android:text="@string/moreoptions"
         android:textSize="16sp" />
 
     <View
@@ -33,7 +33,7 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:paddingLeft="10dip"
-            android:text="@string/txt_automatic_charge"
+            android:text="@string/automaticcharge"
             android:textSize="16sp" />
 
         <ImageView
@@ -67,7 +67,7 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:paddingLeft="10dip"
-            android:text="@string/lbl_mycashless"
+            android:text="@string/mycashless"
             android:textSize="16sp" />
 
         <ImageView
@@ -101,7 +101,7 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:paddingLeft="10dip"
-            android:text="@string/lbl_pay_your_friends"
+            android:text="@string/payfriends"
             android:textSize="16sp" />
 
         <ImageView
@@ -135,7 +135,7 @@
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:paddingLeft="10dip"
-            android:text="@string/lbl_withdraw_wallet"
+            android:text="@string/withdrawwallet"
             android:textSize="16sp" />
 
         <ImageView

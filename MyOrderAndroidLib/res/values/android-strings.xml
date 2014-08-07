@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="code">Code</string>
+    <string name="expiration_month">MM</string>
+    <string name="expiration_year">YY</string>
+    <string name="order_history">Orders</string>
+    <string name="ok">OK</string>
+    <string name="eurosign">\u20ac</string>
+    <string name="paypal_info_text">Enter the amount in euros below. Press the pay button and PayPal will handle the transaction.</string>
+    <string name="order_number">Order:</string>
+    <string name="accept_terms_condition">I accept the terms and conditions of <a href="http://www.minitix.nl/uploadedFiles/161.pdf">MiniTix</a> and <a href="http://www.myorder.nl/voorwaarden/voorwaarden2012.pdf">MyOrder</a></string>
+    <!-- error Messages -->
+    <string name="email_validation">Please provide the valid email address</string>
+    <string name="user_password_empty">Please provide the phone number/ Password</string>
+    <string name="required_field">Missing required field</string>
+    <string name="payment_date">Payment date</string>
+    <string name="bankaccountlabel">Bank Account</string>
+    <string name="bankaccountcheck">Please verify your bank account number.</string>
+    <string name="lbl_agree_ota">I agree with this one-time authorization</string>
+    <string name="nothighenough">%1$s should be at least %2$s.</string>
+    <string name="notfilledin">%1$s is not filled in.</string>
+    <string name="emptyDescription"></string>
+    <string name="msg_fill_confirmation_code">Please fill the confimation Code</string>
+    <string name="msg_contact_access_denied">Access denied for contact</string>
+    <string name="automaticreload">Automatically Reload</string>
+    <string name="lbl_auto_reload_title">Auto Reload</string>
+    <string name="lbl_amount_for_withdraw">Enter the amount you want to transfer to your bank account.</string>
+    <string name="charge_code_missing">please fill code</string>
+    <string name="confirmation_code_error">Enter confirmation code again</string>
+
+</resources>

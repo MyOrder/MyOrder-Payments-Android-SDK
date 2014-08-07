@@ -17,7 +17,7 @@
             android:drawablePadding="10dp"
             android:drawableRight="@drawable/ic_my_order_logo"
             android:gravity="right"
-            android:text="@string/powered_by" />
+            android:text="@string/poweredby" />
 
         <TextView
             android:id="@+id/txt_paywith"
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="5dip"
             android:paddingTop="5dip"
-            android:text="@string/pay_with" />
+            android:text="@string/paywith" />
 
         <LinearLayout
             android:id="@+id/minitix_layout"
@@ -50,7 +50,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:gravity="left"
-                android:text="@string/my_wallet"
+                android:text="@string/mywallet"
                 android:textColor="@android:color/white"
                 android:textStyle="bold" />
 
@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="5dip"
             android:paddingTop="5dip"
-            android:text="@string/selecte_different_payment_type" />
+            android:text="@string/selectedifferentpaymenttype" />
 
         <LinearLayout
             android:id="@+id/payment_providers"

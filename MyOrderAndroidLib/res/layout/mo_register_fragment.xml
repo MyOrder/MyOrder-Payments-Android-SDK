@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="@string/register_info_text" />
+        android:text="@string/registerinfotext" />
 
     <EditText
         android:id="@+id/phone_number"
@@ -26,7 +26,7 @@
         android:layout_marginTop="10dp"
         android:cursorVisible="true"
         android:enabled="true"
-        android:hint="@string/phone_number"
+        android:hint="@string/mobilenumber"
         android:inputType="phone" >
     </EditText>
 

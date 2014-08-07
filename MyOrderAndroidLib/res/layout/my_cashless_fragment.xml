@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="@string/order_your_payment_key"
+            android:text="@string/orderpaymentkey"
             android:textColor="@color/menu_text"
             android:textSize="20sp"
             android:visibility="visible" />
@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="@string/lbl_link_your_payment_key"
+            android:text="@string/linkpaymentkey"
             android:textColor="@color/menu_text"
             android:textSize="20sp"
             android:visibility="visible" />
@@ -189,7 +189,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="@string/loyalty_credits"
+            android:text="@string/loyaltycredits"
             android:textColor="@color/menu_text"
             android:textSize="20sp"
             android:visibility="visible" />

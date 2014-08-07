@@ -2,7 +2,10 @@
 
     <!--
          Customize dimensions originally defined in res/values/dimens.xml (such as
-         screen margins) for sw600dp devices (e.g. 7" tablets) here.
+         screen margins) for sw600dp devices (e.g. 7" tablets) here.
     -->
+    <dimen name="top_padding">40dp</dimen>
+    <dimen name="text_padding">14dip</dimen>
+    <dimen name="btn_padding">15dp</dimen>
 
 </resources>

@@ -9,8 +9,12 @@
     <dimen name="five_dp">5dip</dimen>
     <dimen name="fifteen_dp">15dip</dimen>
     <dimen name="image_dp">20dip</dimen>
-	<dimen name="twentyfive_dp">25dip</dimen>
-	<dimen name="layout_width_five_hundred">500dip</dimen>
-	<dimen name="layout_width_four_six_hundred">600dip</dimen>
-	<dimen name="image_size">45dp</dimen>
+    <dimen name="twentyfive_dp">25dip</dimen>
+    <dimen name="layout_width_five_hundred">500dip</dimen>
+    <dimen name="layout_width_four_six_hundred">600dip</dimen>
+    <dimen name="image_size">45dp</dimen>
+    <dimen name="top_padding">30dp</dimen>
+    <dimen name="text_padding">10dip</dimen>
+    <dimen name="btn_padding">10dp</dimen>
+
 </resources>

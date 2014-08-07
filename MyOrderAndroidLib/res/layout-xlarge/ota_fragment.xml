@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dip"
         android:padding="10dip"
-        android:text="@string/charge_wallet"
+        android:text="@string/chargewallet"
         android:textAppearance="@android:style/TextAppearance.Large" />
 
 </LinearLayout>

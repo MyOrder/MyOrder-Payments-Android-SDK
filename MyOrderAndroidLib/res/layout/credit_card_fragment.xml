@@ -1,11 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FragmentStyle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    style="@style/FragmentStyle"
     android:padding="10dp" >
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_textbox_height"
+        android:layout_marginTop="10dp"
+        android:cursorVisible="true"
+        android:enabled="true"
+        android:hint="@string/amount"
+        android:inputType="phone" >
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:enabled="true"
+        android:hint="@string/choosecreditcard"
+        android:textAppearance="@android:style/TextAppearance.Large" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_stroke" />
+
+    <RelativeLayout
+        android:id="@+id/stored_card_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/stored_card_key"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="@string/usedsavedcard" />
+
+        <CheckBox
+            android:id="@+id/use_stored_card"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/remember_pwd_state"
+            android:checked="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/light_stroke" />
+    </RelativeLayout>
 
     <EditText
         android:id="@+id/cc_number"
@@ -13,26 +73,51 @@
         android:layout_height="@dimen/edit_textbox_height"
         android:layout_marginTop="10dp"
         android:enabled="false"
+        android:hint="@string/creditcardnumber"
         android:inputType="number"
-        android:hint="@string/credit_card_number"
         android:visibility="gone" />
 
-    <Button
+    <RelativeLayout
         android:id="@+id/scan_credit_card"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:drawableLeft="@drawable/icon_photo"
-        android:drawablePadding="10dp"
-        android:gravity="left|center_vertical"
-        android:padding="10dp"
-        android:text="@string/scan_credit_card" />
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_photo"
+            android:drawablePadding="10dp"
+            android:gravity="left|center_vertical"
+            android:padding="10dp"
+            android:text="@string/scancreditcard" />
+
+        <CheckBox
+            android:id="@+id/select_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:button="@drawable/remember_pwd_state"
+            android:checked="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/light_stroke" />
+    </RelativeLayout>
 
     <LinearLayout
+        android:id="@+id/credit_card_fields"
         android:layout_width="match_parent"
         android:layout_height="@dimen/edit_textbox_height"
         android:layout_marginTop="10dp"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:visibility="gone" >
 
         <EditText
             android:id="@+id/ex_month"
@@ -72,30 +157,19 @@
             android:layout_weight="1"
             android:cursorVisible="true"
             android:enabled="true"
-            android:hint="@string/cvc"
+            android:hint="@string/cvccode"
             android:inputType="number" >
         </EditText>
     </LinearLayout>
-
-    <EditText
-        android:id="@+id/amount"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/edit_textbox_height"
-        android:layout_marginTop="10dp"
-        android:cursorVisible="true"
-        android:enabled="true"
-        android:hint="@string/amount"
-        android:inputType="phone" >
-    </EditText>
 
     <LinearLayout
         android:id="@+id/store_card_layout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/edit_textbox_height"
-        android:paddingLeft="10dp"
         android:layout_marginTop="10dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
+        android:paddingLeft="10dp"
         android:visibility="gone" >
 
         <TextView
@@ -113,48 +187,12 @@
             android:checked="false" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/info_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:enabled="true"
-        android:hint="@string/used_saved_card"
-        android:visibility="gone" />
-
-    <LinearLayout
-        android:id="@+id/stored_card_layout"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/edit_textbox_height"
-        android:layout_marginTop="10dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:visibility="gone" >
-
-        <EditText
-            android:id="@+id/stored_card_key"
-            android:layout_width="0dp"
-            android:inputType="text"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:enabled="false"
-            android:textSize="12sp" />
-
-        <CheckBox
-            android:id="@+id/use_stored_card"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:button="@drawable/remember_pwd_state"
-            android:checked="false" />
-    </LinearLayout>
-
     <Button
         android:id="@+id/fill_wallet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:padding="10dp"
-        android:text="@string/charge_wallet" />
+        android:text="@string/chargewallet" />
 
 </LinearLayout>

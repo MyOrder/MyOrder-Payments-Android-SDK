@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="code">Opwaardeercode</string>
+    <string name="expiration_month">MM</string>
+    <string name="expiration_year">JJ</string>
+    <string name="ok">OK</string>
+    <string name="order_history">Bonnen</string>
+    <string name="paypal_info_text">Vul hieronder het bedrag in euros\'s dat je wilt opwaarderen in. De transactie wordt vervolgens door PayPal afgehandeld.</string>
+    <string name="order_number">Bestelnummer:</string>
+    <string name="accept_terms_condition">Ik accepteer de voorwaarden van<a href="http://www.minitix.nl/uploadedFiles/161.pdf">MiniTix</a> en <a href="http://www.myorder.nl/voorwaarden/voorwaarden2012.pdf">MyOrder</a></string>
+    <string name="payment_date">Betaal datum</string>
+
+    <!-- error Messages -->
+    <string name="email_validation">Geef geldig e-mailadres</string>
+    <string name="user_password_empty">Het Telefoonnummer/wachtwoord date je hebt gekozen is niet lang genoeg.</string>
+    <string name="required_field">Ontbrekende verplicht veld</string>
+    <string name="bankaccountlabel">Rekeningnummer</string>
+    <string name="bankaccountcheck">Vul ter controle je rekeningnummer in.</string>
+    <string name="lbl_agree_ota">Ik ga akkoord met deze eenmalige machtiging</string>
+    <string name="nothighenough">%1$s moet minstens %2$s zijn.</string>
+    <string name="notfilledin">%1$s is niet ingevoerd.</string>
+    <string name="msg_contact_access_denied">Toegang tot contacten op dit toestel geweigerd.</string>
+    <string name="automaticreload">Automatisch opladen</string>
+    <string name="eurosign">\u20ac</string>
+    <string name="emptyDescription"></string>
+    <string name="msg_fill_confirmation_code">Vul confimation Code</string>
+    <string name="lbl_auto_reload_title">Automatisch opwaarderen</string>
+    <string name="lbl_amount_for_withdraw">Vul het bedrag in dat je wilt terugstorten naar je rekening.</string>
+
+</resources>

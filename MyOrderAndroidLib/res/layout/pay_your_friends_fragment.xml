@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:text="@string/pay_your_friends_title" />
+            android:text="@string/payfriendstitle" />
 
         <TextView
             android:id="@+id/textData"
@@ -36,7 +36,7 @@
                 android:id="@+id/phoneNumberView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/msg_06_number_of_myorder_id"
+                android:hint="@string/mobilenumberid"
                 android:inputType="phone" />
 
             <ImageButton
@@ -78,7 +78,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/amountLayout"
             android:layout_marginTop="20dip"
-            android:text="@string/lbl_definition" />
+            android:text="@string/definition" />
 
         <EditText
             android:id="@+id/detailsView"
@@ -87,7 +87,7 @@
             android:layout_below="@id/definationText"
             android:layout_marginTop="10dp"
             android:gravity="top|left"
-            android:hint="@string/msg_fill_in_your_details_here"
+            android:hint="@string/fillindetailshere"
             android:inputType="textMultiLine|textNoSuggestions"
             android:lines="7" />
 

@@ -1,44 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FragmentStyle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey_ee"
     android:gravity="center_horizontal"
-    android:orientation="vertical"
-    style="@style/FragmentStyle"
-    android:padding="10dp" >
+    android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/infotext"
+    <LinearLayout
+        android:id="@+id/linearH"
         android:layout_width="match_parent"
+        android:orientation="horizontal"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/ideal_info_text"
-        android:layout_marginBottom="10dp" />
+        android:layout_marginTop="@dimen/top_padding"
+        android:background="@color/white" >
 
-    <EditText
-        android:id="@+id/amount"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/edit_textbox_height"
-        android:cursorVisible="true"
-        android:enabled="true"
-        android:hint="@string/amount"
-        android:inputType="phone" >
-    </EditText>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/text_padding"
+            android:text="@string/eurosign"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:cursorVisible="true"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:hint="@string/amount"
+            android:inputType="phone"
+            android:textAppearance="@android:style/TextAppearance.Medium" >
+        </EditText>
+    </LinearLayout>
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/round_background"
-        android:prompt="@string/select_bank" />
+        android:layout_marginTop="@dimen/top_padding"
+        android:prompt="@string/selectbank" />
 
     <Button
-        android:padding="10dp"
         android:id="@+id/fill_wallet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="@string/charge_wallet" />
+        android:layout_margin="@dimen/wallet_divier_height"
+        android:text="@string/chargewallet" />
 
 </LinearLayout>

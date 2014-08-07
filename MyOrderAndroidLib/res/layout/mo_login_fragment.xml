@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dip"
         android:layout_marginTop="20dip"
-        android:hint="@string/phone_number"
+        android:hint="@string/mobilenumber"
         android:inputType="phone"
         android:paddingLeft="10dip" />
 
@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dip"
         android:layout_marginTop="10dip"
-        android:hint="@string/my_order_password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:paddingLeft="10dip" />
 
@@ -58,7 +58,7 @@
         android:layout_margin="10dip"
         android:gravity="center"
         android:padding="10dp"
-        android:text="@string/my_order_login"
+        android:text="@string/login"
         android:textStyle="bold" />
 
     <Button
@@ -68,7 +68,7 @@
         android:layout_margin="10dip"
         android:gravity="center"
         android:padding="10dp"
-        android:text="@string/reset_password"
+        android:text="@string/passwordforgotten"
         android:textStyle="bold" />
 
 </LinearLayout>

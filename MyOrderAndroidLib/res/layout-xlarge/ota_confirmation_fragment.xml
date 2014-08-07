@@ -14,7 +14,7 @@
         android:layout_marginTop="20dip"
         android:cursorVisible="true"
         android:enabled="true"
-        android:hint="@string/confirmation_code"
+        android:hint="@string/confirmationcode"
         android:inputType="text"
         android:textAppearance="@android:style/TextAppearance.Large" >
     </EditText>

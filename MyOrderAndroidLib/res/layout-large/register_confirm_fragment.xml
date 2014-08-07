@@ -11,7 +11,7 @@
         android:id="@+id/info_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/sms_code_info_message"
+        android:text="@string/confirmationcodemessage"
         android:textAppearance="@android:style/TextAppearance.Medium" />
 
     <EditText
@@ -21,7 +21,7 @@
         android:layout_marginTop="20dip"
         android:cursorVisible="true"
         android:enabled="true"
-        android:hint="@string/confirmation_code"
+        android:hint="@string/confirmationcode"
         android:inputType="numberSigned"
         android:textAppearance="@android:style/TextAppearance.Medium" >
     </EditText>
@@ -33,19 +33,7 @@
         android:layout_marginTop="20dip"
         android:cursorVisible="true"
         android:enabled="true"
-        android:hint="@string/my_order_password"
-        android:inputType="textPassword"
-        android:textAppearance="@android:style/TextAppearance.Medium" >
-    </EditText>
-
-    <EditText
-        android:id="@+id/confirmpassword"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/edit_textbox_height"
-        android:layout_marginTop="20dip"
-        android:cursorVisible="true"
-        android:enabled="true"
-        android:hint="@string/my_order_confirmpassword"
+        android:hint="@string/password"
         android:inputType="textPassword"
         android:textAppearance="@android:style/TextAppearance.Medium" >
     </EditText>

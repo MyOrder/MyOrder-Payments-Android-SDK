@@ -23,6 +23,6 @@
         android:id="@+id/fill_wallet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/charge_wallet" />
+        android:text="@string/chargewallet" />
 
 </LinearLayout>

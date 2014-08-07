@@ -9,7 +9,7 @@
 
     <TextView android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lbl_fill_your_confirmation_code"
+        android:text="@string/fillconfirmationcode"
         android:layout_marginBottom="10dip"
         android:layout_marginTop="10dip"/>
     
@@ -19,7 +19,7 @@
         android:layout_height="@dimen/edit_textbox_height"
         android:cursorVisible="true"
         android:enabled="true"
-        android:hint="@string/confirmation_code"
+        android:hint="@string/confirmationcode"
         android:inputType="text">
     </EditText>
 
