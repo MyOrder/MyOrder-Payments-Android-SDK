@@ -50,7 +50,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="15dp"
         android:padding="10dp"
-        android:text="@string/chargeminiTix"
+        android:text="@string/chargeminitix"
         android:textAppearance="@android:style/TextAppearance.Medium"
         android:visibility="gone" />
 

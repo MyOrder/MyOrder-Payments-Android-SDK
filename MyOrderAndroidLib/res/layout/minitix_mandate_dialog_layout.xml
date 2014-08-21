@@ -32,7 +32,7 @@
     </LinearLayout>
     
     <CheckBox android:id="@+id/checkbox_agree_ota"
-            android:text="@string/lbl_agree_ota"
+            android:text="@string/lblagreeota"
             android:button="@null"
             android:drawableRight="@drawable/remember_pwd_state"
             android:layout_width="match_parent"

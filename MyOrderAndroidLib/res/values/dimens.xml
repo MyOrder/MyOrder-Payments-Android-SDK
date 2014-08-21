@@ -16,5 +16,6 @@
     <dimen name="top_padding">30dp</dimen>
     <dimen name="text_padding">10dip</dimen>
     <dimen name="btn_padding">10dp</dimen>
+    <dimen name="refresh_padding">7dp</dimen>
 
 </resources>

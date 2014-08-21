@@ -15,7 +15,7 @@
         android:cursorVisible="true"
         android:enabled="true"
         android:hint="@string/confirmationcode"
-        android:inputType="text"
+        android:inputType="textCapCharacters"
         android:textAppearance="@android:style/TextAppearance.Large" >
     </EditText>
 

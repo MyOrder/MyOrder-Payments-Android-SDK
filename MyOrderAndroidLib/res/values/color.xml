@@ -25,5 +25,9 @@
     <color name="menu_text">#4c5e7a</color>
     <color name="text_background">#00B2E2</color>
     <color name="white">#FFFFFF</color>
+    <color name="refresh_color_1">#ff8000</color>
+    <color name="refresh_color_2">#42c6e9</color>
+    <color name="refresh_color_3">#FF0000</color>
+    <color name="refresh_color_4">#70DD0D</color>
 
 </resources>

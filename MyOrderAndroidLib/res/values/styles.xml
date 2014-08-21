@@ -2,7 +2,7 @@
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
 
     <style name="MyOrderEditTextStyle" parent="@android:style/Widget.EditText">
@@ -83,12 +83,19 @@
         <item name="android:clickable">true</item>
     </style>
 
+    <style name="EditTextCode">
+        <item name="android:digits">0123456780</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">number</item>
+        <item name="android:maxLength">4</item>
+    </style>
+
     <style name="Theme.JumioNetswipeSDK.ActionBar" parent="@android:style/Widget.Holo.ActionBar">
         <item name="android:background">#000000</item>
 
         <!--
         just in case you want to customize the title text, we have it prepared
-        <item name="android:titleTextStyle">@style/Theme.JumioNetswipeSDK.ActionBar.TitleTextStyle</item>
+        <item name="android:titleTextStyle">@style/Theme.JumioNetswipeSDK.ActionBar.TitleTextStyle</item>
         -->
     </style>
 

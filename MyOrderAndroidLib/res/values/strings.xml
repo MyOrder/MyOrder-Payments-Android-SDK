@@ -5,7 +5,7 @@
     <string name="cancel">Cancel</string>
     <string name="accept">Accept</string>
     <string name="chargecode">Charge Code</string>
-    <string name="chargeminiTix">Charge MiniTix</string>
+    <string name="chargeminitix">Charge MiniTix</string>
     <string name="chargewallet">Charge Wallet</string>
     <string name="confirm">Confirm</string>
     <string name="confirmationcode">Confirmation Code</string>
@@ -57,7 +57,7 @@
     <string name="wallet">Wallet</string>
     <string name="mywallet">My Wallet</string>
     <string name="paywith">Pay with</string>
-    <string name="selectedifferentpaymenttype">Or choose another payment method</string>
+    <string name="selectdifferentpaymenttype">Or choose another payment method</string>
     <string name="loadyourwallet">Load your wallet</string>
     <string name="moreoptions">More options</string>
     <string name="datanotaccepted">Your data is not accepted</string>
@@ -116,13 +116,28 @@
     <string name="register">Register</string>
     <string name="withdrawwallet">Withdraw From Wallet</string>
     <string name="withdrawwalletcompleted">Withdraw from Wallet completed</string>
-    <string name="withdrawheading">Withdraw amount from wallet</string>
     <string name="useralreadyexits">User already exists. Do you want to change the password?</string>
     <string name="usernotexist">User does not exist. Do you want to register?</string>
     <string name="paymentdate">Betaaldatum</string>
     <string name="registerolder18error">You have to be older than 18 year for direct charging.</string>
-    <string name="idealinfotext">Please enter the amount to transfer to your MiniTix wallet.</string>
     <string name="lasttransactions">Last transactions</string>
     <string name="manualreloadinfo">Enter the amount you want to charge from your bank account.</string>
+    <string name="minitixconfirmation">Are you sure you want to pay?</string>
+    <string name="requiredfield">Missing required field</string>
+    <string name="cameranotavailable">Your camera is nor available</string>
+    <string name="systemerror">Loading failed. System error</string>
+    <string name="orderid">Order</string>
+    <string name="ok">OK</string>
+    <string name="bankaccountlabel">Bank Account</string>
+    <string name="code">Code</string>
+    <string name="emailvalidation">Please provide the valid email address</string>
+    <string name="userpasswordempty">Please provide the phone number/ Password</string>
+    <string name="lblagreeota">I agree with this one-time authorization</string>
+    <string name="msgcontactaccessdenied">Access denied for contact</string>
+    <string name="card">Charge card</string>
+    <string name="paypal">PayPal</string>
+    <string name="amountforwithdraw">Enter the amount you want to transfer to your bank account.</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="lblrequiredfield">Missing required field</string>
 
 </resources>

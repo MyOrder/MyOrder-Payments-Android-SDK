@@ -33,7 +33,7 @@
             android:id="@+id/bankAccountCheckView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/bankaccountcheck" />
+            android:text="@string/enterbankaccountnumber" />
 
         <LinearLayout
             android:layout_width="match_parent"

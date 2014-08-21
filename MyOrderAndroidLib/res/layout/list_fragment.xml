@@ -4,22 +4,48 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <TextView
+    <RelativeLayout
+        android:id="@+id/relativeHeader"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/text_background"
-        android:gravity="left|center_vertical"
-        android:padding="3dp"
-        android:text="@string/lasttransactions"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="@color/white" />
+        android:layout_height="wrap_content" >
 
-    <ListView
-        android:id="@+id/list"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/text_background"
+            android:gravity="left|center_vertical"
+            android:padding="5dp"
+            android:text="@string/lasttransactions"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/imgRefresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/emptyDescription"
+            android:padding="@dimen/refresh_padding"
+            android:src="@drawable/ic_refresh" />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="@dimen/five_dp"
-        android:paddingRight="@dimen/five_dp" >
-    </ListView>
+        android:layout_marginTop="1dp"
+        tools:ignore="MergeRootFrame" >
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/five_dp"
+            android:paddingRight="@dimen/five_dp" >
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

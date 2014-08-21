@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lbl_amount_for_withdraw" />
+        android:text="@string/amountforwithdraw" />
 
     <RelativeLayout
         android:id="@+id/amountLayout"
@@ -40,6 +40,6 @@
         android:layout_width="match_parent"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
-        android:text="@string/withdrawwallet" />
+        android:text="@string/withdraw" />
 
 </LinearLayout>

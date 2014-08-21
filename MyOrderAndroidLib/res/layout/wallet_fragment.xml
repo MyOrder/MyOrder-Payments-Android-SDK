@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="5dip"
             android:paddingTop="5dip"
-            android:text="@string/selectedifferentpaymenttype" />
+            android:text="@string/selectdifferentpaymenttype" />
 
         <LinearLayout
             android:id="@+id/payment_providers"

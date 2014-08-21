@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FragmentStyle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_horizontal"
     android:orientation="vertical"
-    style="@style/FragmentStyle"
     android:padding="30dp" >
 
     <TextView
@@ -15,22 +15,47 @@
         android:layout_marginTop="10dp"
         android:text="@string/chargecarddescription" />
 
-    <EditText
-        android:id="@+id/code"
+    <LinearLayout
+        android:id="@+id/code_verification_layout"
         android:layout_width="400dp"
-        android:layout_height="@dimen/edit_textbox_height"
-        android:cursorVisible="true"
-        android:enabled="true"
-        android:hint="@string/code"
-        android:inputType="phone" >
-    </EditText>
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <EditText
+            android:id="@+id/charge_code1"
+            style="@style/EditTextCode"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/charge_code2"
+            style="@style/EditTextCode"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/charge_code3"
+            style="@style/EditTextCode"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1"
+            android:paddingRight="5dip" />
+    </LinearLayout>
 
     <Button
-        android:padding="10dp"
         android:id="@+id/fill_wallet"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:padding="10dp"
         android:text="@string/chargewallet" />
 
 </LinearLayout>
