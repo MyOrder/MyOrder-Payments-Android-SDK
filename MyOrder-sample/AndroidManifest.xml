@@ -5,8 +5,8 @@
     android:versionName="1.0.0" >
 
     <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="19" />
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -28,27 +28,35 @@
         android:label="@string/app_name"
         android:theme="@style/LibTheme" >
         <activity
-            android:name="com.paypal.android.MEP.PayPalActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-        <activity
             android:name="nl.myorder.StartActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" 
-            android:launchMode="singleTask">
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            
             <intent-filter>
-                <data android:scheme="myorder-sample" android:host="ideal_return_url" />
+                <data
+                    android:host="ideal_return_url"
+                    android:scheme="myorder-sample" />
+
                 <action android:name="android.intent.action.VIEW" />
-            	<category android:name="android.intent.category.DEFAULT" />
-             	<category android:name="android.intent.category.BROWSABLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
-            
+            <intent-filter>
+                <data
+                    android:host="paypal_return_url"
+                    android:scheme="myorder-sample" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.jumio.netswipe.sdk.ScanCardActivity"

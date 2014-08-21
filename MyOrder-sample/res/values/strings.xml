@@ -6,5 +6,7 @@
     <string name="show_wallet">Show wallet</string>
     <string name="place_order">Place Order</string>
     <string name="purchase_history_lbl">Purchase History</string>
+    <string name="my_order_login">Login</string>
+    <string name="phone_number">Phone number</string>
 
 </resources>

@@ -14,6 +14,7 @@ import nl.myorder.lib.interfaces.PaymentAnalyticsListener;
 import nl.myorder.lib.ui.MyOrderActivity;
 import nl.myorder.lib.ui.handler.MOFragmentStateHandler;
 import nl.myorder.lib.ui.providers.MOIdealTransactionFragment;
+import nl.myorder.lib.ui.providers.MOPayPalTransactionFragment;
 import nl.myorder.lib.utils.MyOrderStateEnum;
 import nl.myorder.storage.MyOrderStorage;
 import android.content.Intent;
@@ -35,32 +36,35 @@ public class StartActivity extends MyOrderActivity implements VerifyPaymentOrder
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		MyOrder order = MyOrder.getInstance();
-		order.setEnvironment(MyOrderEnvironment.MyOrderEnvironmentPlayground);
+		order.setEnvironment(MyOrderEnvironment.MyOrderEnvironmentSandbox);
 		order.setCredentialStorage(new MyOrderStorage(getApplicationContext()));
-		order.setApiKey(getString(R.string.test_key));
-		order.setApiSecret(getString(R.string.test_sec));
-		order.setUrlScheme(getResources().getString(R.string.url_scheme));
+		order.setApiKey("d712d563-d5ed-4826-8920-1b2c2b743ba9");
+		order.setApiSecret("hH3#1PxxS");
+		order.setUrlScheme("myorder-sample");
+		order.setVerifyPaymentOrderListener(this);
+		if (MyOrder.getInstance().getCredentialStorage() != null) {
+			MyOrder.getInstance().setPhoneNumber(MyOrder.getInstance().getPhoneNumber());
+		}
 		Set<PaymentProvider> set = new HashSet<PaymentProvider>();
 
 		set.add(new PaymentProvider(true, true, MOConstant.PAYMENT_PROVIDER_MINITIX, 1, false, getResources().getString(
-				nl.myorder.lib.R.string.minitix_description), MOConstant.PAYMENT_PROVIDER_MINITIX));
-		set.add(new PaymentProvider(true, true, MOConstant.PAYMENT_PROVIDER_IDEAL, 2, false, getResources()
-				.getString(nl.myorder.lib.R.string.ideal_description), "iDEAL"));
+				nl.myorder.lib.R.string.minitixdescription), MOConstant.PAYMENT_PROVIDER_MINITIX));
+		set.add(new PaymentProvider(true, true, MOConstant.PAYMENT_PROVIDER_IDEAL, 2, false,
+				getResources().getString(nl.myorder.lib.R.string.idealdescription), "iDEAL"));
 		set.add(new PaymentProvider(true, true, MOConstant.PAYMENT_PROVIDER_CREDITCARD, 4, false, getResources().getString(
-				nl.myorder.lib.R.string.creadit_card_description), MOConstant.PAYMENT_PROVIDER_CREDITCARD));
-		set.add(new PaymentProvider(false, false, MOConstant.PAYMENT_PROVIDER_PAYPAL, 3, false, getResources().getString(
-				nl.myorder.lib.R.string.paypal_description), MOConstant.PAYMENT_PROVIDER_PAYPAL));
-		set.add(new PaymentProvider(true, false, MOConstant.PAYMENT_PROVIDER_CARD, 5, false,
-				getResources().getString(nl.myorder.lib.R.string.card_description), MOConstant.PAYMENT_PROVIDER_CARD));
-		set.add(new PaymentProvider(true, false, MOConstant.PAYMENT_PROVIDER_OTA, 6, false, getResources().getString(nl.myorder.lib.R.string.ota_description),
-				getString(nl.myorder.lib.R.string.ota_payment)));
-		set.add(new PaymentProvider(false, false, MOConstant.PAYMENT_PROVIDER_AUTO, 6, false, getResources().getString(
-				nl.myorder.lib.R.string.lbl_auto_reload_title), getString(R.string.lbl_auto_reload_title)));
+				nl.myorder.lib.R.string.creditcarddescription), MOConstant.PAYMENT_PROVIDER_CREDITCARD));
+		set.add(new PaymentProvider(true, true, MOConstant.PAYMENT_PROVIDER_PAYPAL, 3, false, getResources().getString(
+				nl.myorder.lib.R.string.paypaldescription), MOConstant.PAYMENT_PROVIDER_PAYPAL));
+		set.add(new PaymentProvider(true, true, MOConstant.PAYMENT_PROVIDER_CARD, 5, false, getResources().getString(
+				nl.myorder.lib.R.string.chargecarddescription), getResources().getString(R.string.chargecard)));
+		set.add(new PaymentProvider(true, true, MOConstant.PAYMENT_PROVIDER_OTA, 6, false, getResources().getString(nl.myorder.lib.R.string.otadescription),
+				getResources().getString(nl.myorder.lib.R.string.ota)));
+		set.add(new PaymentProvider(false, false, MOConstant.PAYMENT_PROVIDER_AUTO, 7, false,
+				getResources().getString(nl.myorder.lib.R.string.automaticcharge), getString(R.string.automaticcharge)));
+		set.add(new PaymentProvider(false, false, MOConstant.PAYMENT_PROVIDER_WITHDRAW, 8, false, getResources().getString(
+				nl.myorder.lib.R.string.withdrawwallet), getResources().getString(nl.myorder.lib.R.string.withdrawwallet)));
 		order.setConfiguredPaymentProviders(set);
-		order.setVerifyPaymentOrderListener(this);
-		if (MyOrder.getInstance().hasSavedCredentials()) {
-			MyOrder.getInstance().setPhoneNumber(MyOrder.getInstance().getPhoneNumber());
-		}
+
 		if (mContent == null) {
 			mContent = new HomeFragment();
 		}
@@ -120,6 +124,8 @@ public class StartActivity extends MyOrderActivity implements VerifyPaymentOrder
 			Fragment mContent = getSupportFragmentManager().findFragmentById(R.id.content_frame);
 			if (mContent instanceof MOIdealTransactionFragment) {
 				((MOIdealTransactionFragment) mContent).setCallbackFromIdeal(true);
+			} else if (mContent instanceof MOPayPalTransactionFragment) {
+				((MOPayPalTransactionFragment) mContent).setCallbackFromPaypal(true);
 			}
 		}
 	}
