@@ -139,5 +139,7 @@
     <string name="amountforwithdraw">Enter the amount you want to transfer to your bank account.</string>
     <string name="withdraw">Withdraw</string>
     <string name="lblrequiredfield">Missing required field</string>
+    <string name="phonerequired">Phone required</string>
+    <string name="detailsrequired">Description field is empty</string>
 
 </resources>

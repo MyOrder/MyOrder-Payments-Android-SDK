@@ -139,5 +139,7 @@
     <string name="amountforwithdraw">Vul het bedrag in dat je wilt terugstorten naar je rekening.</string>
     <string name="withdraw">Terugstorten</string>
     <string name="lblrequiredfield">Ontbrekende verplicht veld</string>
+    <string name="phonerequired">06-nummer ontbreekt</string>
+    <string name="detailsrequired">De omschrijving is niet ingevuld</string>
 
 </resources>

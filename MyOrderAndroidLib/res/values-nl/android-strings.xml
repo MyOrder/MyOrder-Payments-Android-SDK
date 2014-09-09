@@ -11,7 +11,7 @@
     <!-- error Messages -->
     <string name="eurosign">\u20ac</string>
     <string name="emptyDescription"></string>
-    <string name="msg_fill_confirmation_code">Vul confimation Code</string>
+    <string name="msg_fill_confirmation_code">Vul confirmation Code</string>
     <string name="missing_required_field">Ontbrekende verplicht veld</string>
 
 </resources>

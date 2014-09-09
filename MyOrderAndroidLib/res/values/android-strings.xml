@@ -10,7 +10,7 @@
     <!-- error Messages -->
     <string name="user_password_empty"></string>
     <string name="payment_date">Payment date</string>
-    <string name="msg_fill_confirmation_code">Please fill the confimation Code</string>
+    <string name="msg_fill_confirmation_code">Please fill the confirmation Code</string>
     <string name="charge_code_missing">please fill code</string>
     <string name="confirmation_code_error">Enter confirmation code again</string>
     <string name="missing_required_field">Missing required field</string>

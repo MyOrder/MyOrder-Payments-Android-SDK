@@ -34,7 +34,7 @@
             android:enabled="true"
             android:gravity="center_vertical"
             android:hint="@string/amount"
-            android:inputType="phone"
+            style="@style/AmountEditText"
             android:textAppearance="@android:style/TextAppearance.Medium" >
         </EditText>
     </LinearLayout>

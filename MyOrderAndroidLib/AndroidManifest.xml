@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="nl.myorder.lib"
-    android:versionCode="1"
-    android:versionName="1.0.0" >
+    android:versionCode="10"
+    android:versionName="3.0.0" >
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -24,27 +24,40 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/myorder_app_icon">
+        android:icon="@drawable/myorder_app_icon" >
         <activity
             android:name="com.paypal.android.MEP.PayPalActivity"
             android:configChanges="keyboardHidden|orientation"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
         <activity
             android:name=".ui.MyOrderActivity"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
-                <data android:scheme="myorder" android:host="ideal_return_url" />
+                <data
+                    android:host="ideal_return_url"
+                    android:scheme="myorder" />
+
                 <action android:name="android.intent.action.VIEW" />
-            	<category android:name="android.intent.category.DEFAULT" />
-             	<category android:name="android.intent.category.BROWSABLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
-            
         </activity>
-       
+
+        <!-- Replace card.io library -->
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name="io.card.payment.DataEntryActivity"
+            android:screenOrientation="portrait" />
+
+        <!--
         <activity
             android:name="com.jumio.netswipe.sdk.core.ScanCardActivity"
             android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
@@ -54,6 +67,7 @@
             android:configChanges="orientation|screenSize"
            	
             android:theme="@style/Theme.JumioNetswipeSDK" />
+        -->
     </application>
 
 </manifest>
