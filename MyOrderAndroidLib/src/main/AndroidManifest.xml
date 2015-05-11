@@ -28,11 +28,6 @@
             android:name=".ui.MyOrderActivity"
             android:launchMode="singleTask" >
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            <intent-filter>
                 <data
                     android:host="ideal_return_url"
                     android:scheme="myorder" />
