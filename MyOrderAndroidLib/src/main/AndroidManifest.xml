@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="nl.myorder.lib"
-    android:versionCode="10"
-    android:versionName="3.0.0" >
+    package="nl.myorder.lib">
 
-    <uses-sdk
-        android:minSdkVersion="14"
-        android:targetSdkVersion="22" />
     <!-- needed to do anything on the network -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -56,18 +51,6 @@
         <activity
             android:name="io.card.payment.DataEntryActivity"
             android:screenOrientation="portrait" />
-
-        <!--
-        <activity
-            android:name="com.jumio.netswipe.sdk.core.ScanCardActivity"
-            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
-            android:theme="@style/Theme.JumioNetswipeSDK" />
-        <activity
-            android:name="com.jumio.netswipe.sdk.EnterCardDetailsActivity"
-            android:configChanges="orientation|screenSize"
-           	
-            android:theme="@style/Theme.JumioNetswipeSDK" />
-        -->
     </application>
 
 </manifest>
