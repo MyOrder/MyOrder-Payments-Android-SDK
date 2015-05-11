@@ -1,1 +1,2 @@
 include ':MyOrderAndroidLib'
+include ':MyOrder-sample'
